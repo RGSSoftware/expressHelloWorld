@@ -7,7 +7,7 @@ node {
         try {
             sh('docker rm -f expresshelloworld')
         } catch (Exception e) {
-            echo 'There\s no container by :expresshelloworld'
+            echo 'There s no container by :expresshelloworld'
         }
         
         sh('docker run -e VIRTUAL_HOST=api.pixeljaw.com -e VIRTUAL_PORT=3000 -p 3000 --name expresshelloworld -d rgsoftware/expresshelloworld')
