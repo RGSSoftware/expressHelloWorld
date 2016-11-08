@@ -5,6 +5,10 @@ app.get('/', function (req, res) {
   res.send('Hello World!, A Change from github')
 })
 
+app.get('/message', function (req, res) {
+  res.send('World, Hello')
+})
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
