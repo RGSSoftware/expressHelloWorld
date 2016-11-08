@@ -2,7 +2,7 @@ node {
     dir("${pwd()}@script"){
 
         sh('docker build -t rgsoftware/expresshelloworld .')
-        //sh('docker push rgsoftware/expresshelloworld')
+        sh('docker push rgsoftware/expresshelloworld:latest')
 
         try {
             sh('docker rm -f expresshelloworld')
