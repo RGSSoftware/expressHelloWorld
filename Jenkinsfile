@@ -6,7 +6,7 @@ node {
 
         try {
             sh('docker rm -f expresshelloworld')
-        } catch {
+        } catch (Exception e) {
             echo 'There\s no container by :expresshelloworld'
         }
         
